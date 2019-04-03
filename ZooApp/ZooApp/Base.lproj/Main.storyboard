@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZooApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k4D-05-BvL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnimal" rowHeight="154" id="cva-40-QUp" customClass="TVCAnimal" customModule="ZooApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cva-40-QUp" id="RPI-wA-p32">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f44-Wp-MhU">
+                                                    <rect key="frame" x="16" y="16" width="359" height="121.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-6b-Pfp">
+                                                            <rect key="frame" x="126" y="8" width="225" height="19"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ballena" translatesAutoresizingMaskIntoConstraints="NO" id="XbG-vw-grI">
+                                                            <rect key="frame" x="8" y="8" width="110" height="106"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="rai-zE-SWw"/>
+                                                                <constraint firstAttribute="width" constant="110" id="wLj-ZY-oub"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gz6-Z0-UrD">
+                                                            <rect key="frame" x="126" y="35" width="225" height="79"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="79" id="kSj-ok-vmf"/>
+                                                            </constraints>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="b2s-6b-Pfp" secondAttribute="trailing" constant="8" id="HCi-Ry-Wrq"/>
+                                                        <constraint firstItem="XbG-vw-grI" firstAttribute="leading" secondItem="f44-Wp-MhU" secondAttribute="leading" constant="8" id="QLg-9j-jIy"/>
+                                                        <constraint firstItem="Gz6-Z0-UrD" firstAttribute="leading" secondItem="b2s-6b-Pfp" secondAttribute="leading" id="TbQ-0U-lUd"/>
+                                                        <constraint firstItem="Gz6-Z0-UrD" firstAttribute="top" secondItem="b2s-6b-Pfp" secondAttribute="bottom" constant="8" id="VZg-xC-sUj"/>
+                                                        <constraint firstItem="Gz6-Z0-UrD" firstAttribute="leading" secondItem="b2s-6b-Pfp" secondAttribute="leading" id="Vmo-Mi-Pj0"/>
+                                                        <constraint firstItem="XbG-vw-grI" firstAttribute="top" secondItem="f44-Wp-MhU" secondAttribute="top" constant="8" id="XLK-EG-c9u"/>
+                                                        <constraint firstAttribute="bottom" secondItem="XbG-vw-grI" secondAttribute="bottom" constant="7.5" id="coS-eu-v66"/>
+                                                        <constraint firstItem="b2s-6b-Pfp" firstAttribute="top" secondItem="f44-Wp-MhU" secondAttribute="top" constant="8" id="n5d-Qq-1FI"/>
+                                                        <constraint firstItem="b2s-6b-Pfp" firstAttribute="leading" secondItem="XbG-vw-grI" secondAttribute="trailing" constant="8" id="qBm-7p-xYH"/>
+                                                        <constraint firstItem="Gz6-Z0-UrD" firstAttribute="trailing" secondItem="b2s-6b-Pfp" secondAttribute="trailing" id="xKW-tY-9of"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.83137254901960778" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="f44-Wp-MhU" firstAttribute="leading" secondItem="RPI-wA-p32" secondAttribute="leadingMargin" constant="8" id="Ram-Hs-Cs4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f44-Wp-MhU" secondAttribute="bottom" constant="8" id="h4Y-c1-Zwg"/>
+                                                <constraint firstItem="f44-Wp-MhU" firstAttribute="trailing" secondItem="RPI-wA-p32" secondAttribute="trailingMargin" constant="8" id="kST-sX-A1q"/>
+                                                <constraint firstItem="f44-Wp-MhU" firstAttribute="top" secondItem="RPI-wA-p32" secondAttribute="topMargin" constant="8" id="sUl-Bd-KqL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="ivAnimalImage" destination="XbG-vw-grI" id="FQo-iH-QHC"/>
+                                            <outlet property="laAnimalDes" destination="Gz6-Z0-UrD" id="UNu-Um-Sap"/>
+                                            <outlet property="laAnimalName" destination="b2s-6b-Pfp" id="UFT-Ct-7ws"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="54Y-5C-Tzj"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ji4-kN-sMY"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WcN-uf-so7"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b1y-Ss-rhX"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nkU-Qy-3i8"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oga-8q-ajK"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rzd-K6-Xkc"/>
+                            <constraint firstItem="k4D-05-BvL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tBc-hG-iMX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tvListAnimals" destination="k4D-05-BvL" id="yoY-es-Z6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ballena" width="100" height="100"/>
+    </resources>
+</document>
